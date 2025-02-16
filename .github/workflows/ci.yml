@@ -26,34 +26,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+          cache: 'pip'
           
       - uses: actions/configure-pages@v4
           
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs \
-                      pymdown-extensions \
-                      mkdocs-material \
-                      mkdocs-material-extensions \
-                      mkdocs-simple-hooks \
-                      mkdocs-video \
-                      mkdocs-minify-plugin \
-                      mkdocs-git-revision-date-localized-plugin \
-                      mkdocs-static-i18n \
-                      mkdocs-with-pdf \
-                      qrcode \
-                      mkdocs-awesome-pages-plugin \
-                      mkdocs-embed-external-markdown \
-                      mkdocs-include-markdown-plugin \
-                      mkdocs-ezlinks-plugin \
-                      mkdocs-git-authors-plugin \
-                      mkdocs-git-committers-plugin \
-                      mkdocs-exclude \
-                      pptx2md \
-                      mkdocs-macros-plugin
+          pip install -r requirements.txt
 
       - name: Build site
+        env:
+          MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
         run: mkdocs build
 
       - name: Upload artifact

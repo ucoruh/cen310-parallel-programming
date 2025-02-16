@@ -129,8 +129,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: material.extensions.emoji.twemoji
+      emoji_generator: material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -145,7 +145,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -174,17 +174,56 @@ plugins:
           build: true
           default: true
           site_name: "RTEU CEN310 Parallel Programming Course"
+          nav_translations:
+            "Anasayfa": "Home"
+            "Ders Programı": "Syllabus"
+            "Ders Modülleri": "Course Modules"
+            "Lisans": "License"
+            "Özgeçmiş": "Resume"
+            "Revizyonlar": "Changelog"
+            "Hafta-1 (Derse Giriş ve Genel Bakış)": "Week-1 (Course Introduction and Overview)"
+            "Hafta-2 (Paralel Hesaplama Temelleri)": "Week-2 (Parallel Computing Fundamentals)"
+            "Hafta-3 (OpenMP'ye Giriş)": "Week-3 (Introduction to OpenMP)"
+            "Hafta-4 (İleri OpenMP)": "Week-4 (Advanced OpenMP)"
+            "Hafta-5 (Performans Analizi ve MPI'ya Giriş)": "Week-5 (Performance Analysis & MPI Introduction)"
+            "Hafta-6 (İleri MPI ve Paralel Desenler)": "Week-6 (Advanced MPI & Parallel Patterns)"
+            "Hafta-7 (Quiz-1)": "Week-7 (Quiz-1)"
+            "Hafta-8 (Ara Sınav Proje İncelemesi)": "Week-8 (Midterm Project Review)"
+            "Hafta-9 (Ara Sınav Dönemi)": "Week-9 (Midterm Examination Period)"
+            "Hafta-10 (Paralel Algoritma Tasarımı ve GPU Temelleri)": "Week-10 (Parallel Algorithm Design & GPU Basics)"
+            "Hafta-11 (İleri GPU Programlama)": "Week-11 (Advanced GPU Programming)"
+            "Hafta-12 (Gerçek Dünya Uygulamaları I)": "Week-12 (Real-world Applications I)"
+            "Hafta-13 (Gerçek Dünya Uygulamaları II)": "Week-13 (Real-world Applications II)"
+            "Hafta-14 (Quiz-2)": "Week-14 (Quiz-2)"
+            "Hafta-15 (Final Proje İncelemesi)": "Week-15 (Final Project Review)"
+            "Hafta-16 (Final Sınav Dönemi)": "Week-16 (Final Examination Period)"
         - locale: tr
           name: "Türkçe"
           build: true
           site_name: "RTEU CEN310 Paralel Programlama Kursu"
           nav_translations:
-            Home: "Anasayfa"
-            Syllabus: "Ders Programı"
-            Course Modules: "Ders Modülleri"
-            License: "Lisans"
-            Resume: "Özgeçmiş"
-            Changelog: "Revizyonlar"
+            "Home": "Anasayfa"
+            "Syllabus": "Ders Programı"
+            "Course Modules": "Ders Modülleri"
+            "License": "Lisans"
+            "Resume": "Özgeçmiş"
+            "Changelog": "Revizyonlar"
+            "Week-1 (Course Introduction and Overview)": "Hafta-1 (Derse Giriş ve Genel Bakış)"
+            "Week-2 (Parallel Computing Fundamentals)": "Hafta-2 (Paralel Hesaplama Temelleri)"
+            "Week-3 (Introduction to OpenMP)": "Hafta-3 (OpenMP'ye Giriş)"
+            "Week-4 (Advanced OpenMP)": "Hafta-4 (İleri OpenMP)"
+            "Week-5 (Performance Analysis & MPI Introduction)": "Hafta-5 (Performans Analizi ve MPI'ya Giriş)"
+            "Week-6 (Advanced MPI & Parallel Patterns)": "Hafta-6 (İleri MPI ve Paralel Desenler)"
+            "Week-7 (Quiz-1)": "Hafta-7 (Quiz-1)"
+            "Week-8 (Midterm Project Review)": "Hafta-8 (Ara Sınav Proje İncelemesi)"
+            "Week-9 (Midterm Examination Period)": "Hafta-9 (Ara Sınav Dönemi)"
+            "Week-10 (Parallel Algorithm Design & GPU Basics)": "Hafta-10 (Paralel Algoritma Tasarımı ve GPU Temelleri)"
+            "Week-11 (Advanced GPU Programming)": "Hafta-11 (İleri GPU Programlama)"
+            "Week-12 (Real-world Applications I)": "Hafta-12 (Gerçek Dünya Uygulamaları I)"
+            "Week-13 (Real-world Applications II)": "Hafta-13 (Gerçek Dünya Uygulamaları II)"
+            "Week-14 (Quiz-2)": "Hafta-14 (Quiz-2)"
+            "Week-15 (Final Project Review)": "Hafta-15 (Final Proje İncelemesi)"
+            "Week-16 (Final Examination Period)": "Hafta-16 (Final Sınav Dönemi)"
   - tags:
       tags_file: tags.md
   - minify:
@@ -200,7 +239,7 @@ plugins:
       repository: ucoruh/cen310-parallel-programming
       docs_path: docs/
       branch: main
-      token: !ENV MKDOCS_GIT_COMMITTERS_APIKEY
+      token: ${MKDOCS_GIT_COMMITTERS_APIKEY}
   - macros
 
 extra_javascript:
@@ -210,24 +249,24 @@ extra_javascript:
 # Page tree (for navigation)
 nav:
   - Home: index.md
-  - Syllabus: syllabus/syllabus.md
+  - Syllabus: syllabus/syllabus.en.md
   - Course Modules:
-    - Week-1 (Course Introduction and Overview): week-1/cen310-week-1.md
-    - Week-2 (Parallel Computing Fundamentals): week-2/cen310-week-2.md
-    - Week-3 (Introduction to OpenMP): week-3/cen310-week-3.md
-    - Week-4 (Advanced OpenMP): week-4/cen310-week-4.md
-    - Week-5 (Performance Analysis & MPI Introduction): week-5/cen310-week-5.md
-    - Week-6 (Advanced MPI & Parallel Patterns): week-6/cen310-week-6.md
-    - Week-7 (Quiz-1): week-7-quiz/cen310-week-7.md
-    - Week-8 (Midterm Project Review): week-8-midterm/cen310-week-8.md
-    - Week-9 (Midterm Examination Period): week-9-midterm/cen310-week-9.md
-    - Week-10 (Parallel Algorithm Design & GPU Basics): week-10/cen310-week-10.md
-    - Week-11 (Advanced GPU Programming): week-11/cen310-week-11.md
-    - Week-12 (Real-world Applications I): week-12/cen310-week-12.md
-    - Week-13 (Real-world Applications II): week-13/cen310-week-13.md
-    - Week-14 (Quiz-2): week-14-quiz/cen310-week-14.md
-    - Week-15 (Final Project Review): week-15-final/cen310-week-15.md
-    - Week-16 (Final Examination Period): week-16-final/cen310-week-16.md
+    - Week-1 (Course Introduction and Overview): week-1/cen429-week-1.en.md
+    - Week-2 (Parallel Computing Fundamentals): week-2/cen429-week-2.en.md
+    - Week-3 (Introduction to OpenMP): week-3/cen310-week-3.en.md
+    - Week-4 (Advanced OpenMP): week-4/cen310-week-4.en.md
+    - Week-5 (Performance Analysis & MPI Introduction): week-5/cen310-week-5.en.md
+    - Week-6 (Advanced MPI & Parallel Patterns): week-6/cen310-week-6.en.md
+    - Week-7 (Quiz-1): week-7/cen310-week-7.en.md
+    - Week-8 (Midterm Project Review): week-8/cen310-week-8.en.md
+    - Week-9 (Midterm Examination Period): week-9/cen310-week-9.en.md
+    - Week-10 (Parallel Algorithm Design & GPU Basics): week-10/cen310-week-10.en.md
+    - Week-11 (Advanced GPU Programming): week-11/cen310-week-11.en.md
+    - Week-12 (Real-world Applications I): week-12/cen310-week-12.en.md
+    - Week-13 (Real-world Applications II): week-13/cen310-week-13.en.md
+    - Week-14 (Quiz-2): week-14/cen310-week-14.en.md
+    - Week-15 (Final Project Review): week-15/cen310-week-15.en.md
+    - Week-16 (Final Examination Period): week-16/cen310-week-16.en.md
   - License: license.md
   - Resume: resume/index.md
   - Changelog: changelog/index.md
