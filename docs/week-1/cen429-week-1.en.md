@@ -529,41 +529,216 @@ void comparePerformance() {
 
 ---
 
-### Installation Steps (1/3)
+### Step-by-Step Installation Guide
 
-**Visual Studio 2022:**
-- Download from visualstudio.microsoft.com
-- Select workloads:
-  - "Desktop development with C++"
-  - "Linux development with C++"
+#### Windows Installation (30 minutes)
 
----
+1. **Visual Studio Code Installation**
+   - Go to [Visual Studio Code](https://code.visualstudio.com/)
+   - Click "Download for Windows"
+   - Run the installer (VSCodeUserSetup-x64-*.exe)
+   - ✅ Check "Add to PATH" during installation
+   - ✅ Check "Add 'Open with Code' action"
 
-### Installation Steps (2/3)
+2. **MinGW Compiler Installation**
+   ```bash
+   # Step 1: Download MSYS2
+   # Visit https://www.msys2.org/ and download installer
+   
+   # Step 2: Run MSYS2 installer
+   # Use default installation path: C:\msys64
+   
+   # Step 3: Open MSYS2 terminal and run:
+   pacman -Syu  # Update package database
+   # Close terminal when asked
+   
+   # Step 4: Reopen MSYS2 and install required packages:
+   pacman -S mingw-w64-x86_64-gcc
+   pacman -S mingw-w64-x86_64-gdb
+   ```
 
-**WSL2 Setup:**
-```powershell
-# Enable WSL
-wsl --install
+3. **Add to PATH**
+   - Open Windows Search
+   - Type "Environment Variables"
+   - Click "Edit the system environment variables"
+   - Click "Environment Variables"
+   - Under "System Variables", find "Path"
+   - Click "Edit" → "New"
+   - Add `C:\msys64\mingw64\bin`
+   - Click "OK" on all windows
 
-# Update WSL
-wsl --update
-```
+4. **Verify Installation**
+   ```bash
+   # Open new Command Prompt and type:
+   gcc --version
+   g++ --version
+   gdb --version
+   ```
 
----
+#### VS Code Configuration (15 minutes)
 
-### Installation Steps (3/3)
+1. **Install Required Extensions**
+   - Open VS Code
+   - Press Ctrl+Shift+X
+   - Install these extensions:
+     - C/C++ Extension Pack
+     - Code Runner
+     - GitLens
+     - Live Share
 
-**Ubuntu Setup:**
-- Install from Microsoft Store
-- First time setup:
-  ```bash
-  # Update package list
-  sudo apt update
-  
-  # Install development tools
-  sudo apt install build-essential
-  ```
+2. **Create Workspace**
+   ```bash
+   # Open Command Prompt
+   mkdir parallel_programming
+   cd parallel_programming
+   code .
+   ```
+
+3. **Configure Build Tasks**
+   - Press Ctrl+Shift+P
+   - Type "Tasks: Configure Default Build Task"
+   - Select "Create tasks.json from template"
+   - Select "Others"
+   - Replace content with:
+   ```json
+   {
+       "version": "2.0.0",
+       "tasks": [
+           {
+               "label": "build",
+               "type": "shell",
+               "command": "g++",
+               "args": [
+                   "-g",
+                   "-fopenmp",
+                   "${file}",
+                   "-o",
+                   "${fileDirname}/${fileBasenameNoExtension}"
+               ],
+               "group": {
+                   "kind": "build",
+                   "isDefault": true
+               }
+           }
+       ]
+   }
+   ```
+
+#### First OpenMP Program (15 minutes)
+
+1. **Create Test File**
+   - In VS Code, create new file: `test.cpp`
+   - Add this code:
+   ```cpp
+   #include <iostream>
+   #include <omp.h>
+   
+   int main() {
+       // Get total available threads
+       int max_threads = omp_get_max_threads();
+       printf("System has %d processors available\n", max_threads);
+       
+       // Set number of threads
+       omp_set_num_threads(4);
+       
+       // Parallel region
+       #pragma omp parallel
+       {
+           int id = omp_get_thread_num();
+           printf("Hello from thread %d\n", id);
+           
+           // Only master thread prints total
+           if (id == 0) {
+               printf("Total %d threads running\n", 
+                      omp_get_num_threads());
+           }
+       }
+       return 0;
+   }
+   ```
+
+2. **Compile and Run**
+   - Press Ctrl+Shift+B to build
+   - Open terminal (Ctrl+`)
+   - Run program:
+   ```bash
+   ./test
+   ```
+
+3. **Experiment**
+   ```bash
+   # Try different thread counts
+   set OMP_NUM_THREADS=2
+   ./test
+   
+   set OMP_NUM_THREADS=8
+   ./test
+   ```
+
+#### Common Issues and Solutions
+
+1. **Compiler Not Found**
+   - Verify PATH setting
+   - Restart VS Code
+   - Restart Command Prompt
+
+2. **OpenMP Not Recognized**
+   - Ensure `-fopenmp` flag in tasks.json
+   - Check compiler version supports OpenMP
+
+3. **Program Crashes**
+   - Check array bounds
+   - Verify thread synchronization
+   - Use proper reduction clauses
+
+#### Practice Exercises
+
+1. **Basic Parallel For**
+   ```cpp
+   // Create array_sum.cpp
+   #include <omp.h>
+   #include <vector>
+   
+   int main() {
+       const int SIZE = 1000000;
+       std::vector<int> data(SIZE);
+       long sum = 0;
+       
+       // Initialize array
+       for(int i = 0; i < SIZE; i++) {
+           data[i] = i;
+       }
+       
+       // Parallel sum
+       #pragma omp parallel for reduction(+:sum)
+       for(int i = 0; i < SIZE; i++) {
+           sum += data[i];
+       }
+       
+       printf("Sum: %ld\n", sum);
+       return 0;
+   }
+   ```
+
+2. **Thread Private Data**
+   ```cpp
+   // Create thread_private.cpp
+   #include <omp.h>
+   
+   int main() {
+       int thread_sum = 0;
+       
+       #pragma omp parallel private(thread_sum)
+       {
+           thread_sum = omp_get_thread_num();
+           printf("Thread %d: sum = %d\n", 
+                  omp_get_thread_num(), thread_sum);
+       }
+       
+       printf("Final sum: %d\n", thread_sum);
+       return 0;
+   }
+   ```
 
 ---
 
@@ -1246,6 +1421,226 @@ void analyzePerformance() {
 ```
 
 ---
+
+## Cross-Platform Development Environment (1/5)
+
+### Project Template
+
+Download or clone the template project:
+```bash
+git clone https://github.com/ucoruh/cpp-openmp-template
+# or create manually:
+mkdir parallel-programming
+cd parallel-programming
+```
+
+Create this structure:
+```
+parallel-programming/
+├── CMakeLists.txt
+├── src/
+│   ├── main.cpp
+│   └── include/
+│       └── config.h
+├── build/
+│   ├── windows/
+│   └── linux/
+└── scripts/
+    ├── build-windows.bat
+    └── build-linux.sh
+```
+
+---
+
+## Cross-Platform Development Environment (2/5)
+
+### CMakeLists.txt
+```cmake
+cmake_minimum_required(VERSION 3.15)
+project(parallel-programming)
+
+# C++17 standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# Find OpenMP
+find_package(OpenMP)
+if(OpenMP_CXX_FOUND)
+    message(STATUS "OpenMP found")
+else()
+    message(FATAL_ERROR "OpenMP not found")
+endif()
+
+# Add executable
+add_executable(${PROJECT_NAME} 
+    src/main.cpp
+)
+
+# Include directories
+target_include_directories(${PROJECT_NAME}
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/include
+)
+
+# Link OpenMP
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE
+        OpenMP::OpenMP_CXX
+)
+```
+
+---
+
+## Cross-Platform Development Environment (3/5)
+
+### Build Scripts
+
+**build-windows.bat:**
+```batch
+@echo off
+setlocal
+
+:: Create build directory
+mkdir build\windows 2>nul
+cd build\windows
+
+:: CMake configuration
+cmake -G "Visual Studio 17 2022" -A x64 ..\..
+
+:: Debug build
+cmake --build . --config Debug
+
+:: Release build
+cmake --build . --config Release
+
+cd ..\..
+
+echo Build completed!
+pause
+```
+
+**build-linux.sh:**
+```bash
+#!/bin/bash
+
+# Create build directory
+mkdir -p build/linux
+cd build/linux
+
+# CMake configuration
+cmake -G Ninja -DCMAKE_BUILD_TYPE=Release ../..
+
+# Build
+ninja
+
+cd ../..
+
+echo "Build completed!"
+```
+
+---
+
+## Cross-Platform Development Environment (4/5)
+
+### Platform-Independent Code
+
+**config.h:**
+```cpp
+#pragma once
+
+// Platform check
+#if defined(_WIN32)
+    #define PLATFORM_WINDOWS
+#elif defined(__linux__)
+    #define PLATFORM_LINUX
+#else
+    #error "Unsupported platform"
+#endif
+
+// OpenMP check
+#ifdef _OPENMP
+    #define HAVE_OPENMP
+#endif
+```
+
+**main.cpp:**
+```cpp
+#include <iostream>
+#include <vector>
+#include <omp.h>
+#include "config.h"
+
+int main() {
+    // OpenMP version check
+    #ifdef _OPENMP
+        std::cout << "OpenMP Version: " 
+                  << _OPENMP << std::endl;
+    #else
+        std::cout << "OpenMP not supported" << std::endl;
+        return 1;
+    #endif
+
+    // Set thread count
+    omp_set_num_threads(4);
+
+    // Parallel region
+    #pragma omp parallel
+    {
+        int thread_id = omp_get_thread_num();
+        int total_threads = omp_get_num_threads();
+        
+        #pragma omp critical
+        {
+            std::cout << "Thread " << thread_id 
+                      << " of " << total_threads 
+                      << std::endl;
+        }
+    }
+
+    return 0;
+}
+```
+
+---
+
+## Cross-Platform Development Environment (5/5)
+
+### Common Issues and Solutions
+
+1. **CMake OpenMP Issues:**
+   - Windows: Reinstall Visual Studio
+   - Linux: `sudo apt install libomp-dev`
+
+2. **WSL Connection Issues:**
+   ```powershell
+   wsl --shutdown
+   wsl --update
+   ```
+
+3. **Build Errors:**
+   - Delete build directory
+   - Delete CMakeCache.txt
+   - Rebuild project
+
+4. **VS2022 WSL Target Missing:**
+   - Run VS2022 as administrator
+   - Install Linux Development workload
+   - Restart WSL
+
+---
+
+## Additional Resources
+
+- [Visual Studio Documentation](https://docs.microsoft.com/en-us/visualstudio/)
+- [WSL Documentation](https://docs.microsoft.com/en-us/windows/wsl/)
+- [CMake Tutorial](https://cmake.org/cmake/help/latest/guide/tutorial/)
+- [OpenMP Documentation](https://www.openmp.org/resources/)
+
+For questions and help:
+- GitHub Issues
+- Email
+- Office hours
 
 $$
 End-Of-Week-1

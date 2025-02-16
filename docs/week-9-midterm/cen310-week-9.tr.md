@@ -55,125 +55,33 @@ math: katex
 
 #### Bahar Dönemi, 2024-2025
 
+Download 
+
+- [PDF](pandoc_cen310-week-9.pdf)
+- [DOC](pandoc_cen310-week-9.docx)
+- [SLIDE](cen310-week-9.pdf)
+- [PPTX](cen310-week-9.pptx)
+
 ---
 
-## Vize Sınav Dönemi Bilgileri
+<iframe width=700, height=500 frameBorder=0 src="../cen310-week-9.html"></iframe>
+
+---
+
+## Vize Sınav Dönemi
 
 ### Tarihler
 - **Dönem:** 5-13 Nisan 2025
-- **Proje Raporu Teslimi:** Üniversite tarafından belirlenen tarihte
+- Üniversitenin resmi sınav programını kontrol ediniz
 
 ### Konum
 - Üniversite tarafından atanan yerde
-- Resmi sınav programını kontrol edin
+- Sınav yerini öğrenci bilgi sisteminden kontrol ediniz
 
----
-
-## Vize Proje Raporu Gereksinimleri
-
-### 1. Proje Dokümantasyonu
-- Eksiksiz proje raporu
-- Dokümantasyonlu kaynak kod
-- Performans analizi sonuçları
-- Uygulama detayları
-- Gelecek çalışma önerileri
-
-### 2. Teknik Gereksinimler
-- Kod kalitesi ve organizasyonu
-- Performans optimizasyon sonuçları
-- Sıralı versiyon ile karşılaştırma
-- Ölçeklenebilirlik analizi
-- Hata yönetimi uygulaması
-
----
-
-## Rapor Yapısı
-
-### 1. Yönetici Özeti
-- Proje genel bakışı
-- Temel başarılar
-- Performans öne çıkanları
-
-### 2. Teknik Uygulama
-- Mimari detaylar
-- Algoritma açıklamaları
-- Paralelleştirme stratejisi
-- Kod yapısı
-
-### 3. Performans Analizi
-- Kıyaslama sonuçları
-- Ölçeklenebilirlik testleri
-- Kaynak kullanımı
-- Optimizasyon çalışmaları
-
-### 4. Sonuçlar
-- Öğrenilen dersler
-- Aşılan zorluklar
-- Gelecek iyileştirmeler
-
----
-
-## Teslim Yönergeleri
-
-### Format Gereksinimleri
-- PDF formatı
-- Profesyonel formatlama
-- Açık kod listeleri
-- Uygun alıntılar
-- Performans grafikleri
-
-### Teslim Süreci
-- Dijital teslim
-- Kaynak kod deposu
-- Dokümantasyon paketi
-- Sunum slaytları
-
----
-
-## Değerlendirme Kriterleri
-
-### Teknik Derinlik (40%)
-- Uygulama kalitesi
-- Performans optimizasyonu
-- Kod organizasyonu
-- Dokümantasyon kalitesi
-
-### Analiz ve Sonuçlar (40%)
-- Performans ölçümleri
-- Ölçeklenebilirlik analizi
-- Karşılaştırmalı değerlendirme
-- Problem çözme yaklaşımı
-
-### Dokümantasyon (20%)
-- Rapor kalitesi
-- Kod dokümantasyonu
-- Sunum materyalleri
-- Gelecek önerileri
-
----
-
-## Önemli Notlar
-
-### Teslim Tarihleri
-- Rapor teslim tarihi kesindir
-- Geç teslimler kabul edilmeyebilir
-- Uzatmalar önceden onay gerektirir
-
-### Akademik Dürüstlük
-- Özgün çalışma gereklidir
-- Uygun alıntılar gereklidir
-- Kod intihal kontrolü yapılır
-- İşbirliği belirtilmelidir
-
----
-
-## İletişim Bilgileri
-
-Sınav ile ilgili sorularınız için:
-
-- **E-posta:** ugur.coruh@erdogan.edu.tr
-- **Ofis Saatleri:** Randevu ile
-- **Konum:** Mühendislik Fakültesi
+### İletişim
+- E-posta: ugur.coruh@erdogan.edu.tr
+- Ofis: Mühendislik Fakültesi
+- Ofis Saatleri: Randevu ile
 
 ---
 
@@ -181,6 +89,10 @@ Sınav ile ilgili sorularınız için:
 
 <!-- _color: orange -->
 
-# Vize Sınavınızda Başarılar!
+# Vize Sınavlarınızda Başarılar!
 
---- 
+---
+
+$$
+End-Of-Week-9
+$$ 

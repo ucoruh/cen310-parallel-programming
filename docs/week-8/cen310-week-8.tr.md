@@ -10,12 +10,12 @@ _class: lead
 paginate: true
 backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
-header: 'CEN310 Paralel Programlama Hafta-8'
-footer: '![height:50px](http://erdogan.edu.tr/Images/Uploads/MyContents/L_379-20170718142719217230.jpg) RTEÜ CEN310 Hafta-8'
-title: "CEN310 Paralel Programlama Hafta-8"
-author: "Öğr. Gör. Dr. Uğur CORUH"
+header: 'CEN310 Parallel Programming Week-8'
+footer: '![height:50px](http://erdogan.edu.tr/Images/Uploads/MyContents/L_379-20170718142719217230.jpg) RTEU CEN310 Week-8'
+title: "CEN310 Parallel Programming Week-8"
+author: "Author: Dr. Uğur CORUH"
 date:
-subtitle: "Vize Proje Değerlendirmesi"
+subtitle: "Project Review"
 geometry: "left=2.54cm,right=2.54cm,top=1.91cm,bottom=1.91cm"
 titlepage: true
 titlepage-color: "FFFFFF"
@@ -36,10 +36,10 @@ header-left:
 header-center:
 header-right:
 footer-left: "© Dr. Uğur CORUH"
-footer-center: "Lisans: CC BY-NC-ND 4.0"
+footer-center: "License: CC BY-NC-ND 4.0"
 footer-right:
 subparagraph: true
-lang: tr-TR
+lang: en-US
 math: katex
 ---
 
@@ -49,214 +49,52 @@ math: katex
 
 <!-- paginate: false -->
 
-# CEN310 Paralel Programlama
+# CEN310 Parallel Programming
 
-## Hafta-8 (Vize Proje Değerlendirmesi)
+## Week-8 (Project Review)
 
-#### Bahar Dönemi, 2024-2025
+#### Spring Semester, 2024-2025
 
----
+Download 
 
-## Proje Değerlendirme Günü Programı
-
-### Sabah Oturumu (09:00-12:00)
-- Proje sunumları (Grup 1-4)
-- Performans analizi tartışmaları
-- Soru-cevap oturumları
-
-### Öğle Arası (12:00-13:00)
-
-### Öğleden Sonra Oturumu (13:00-17:00)
-- Proje sunumları (Grup 5-8)
-- Teknik gösterimler
-- Son değerlendirmeler
+- [PDF](pandoc_cen310-week-8.pdf)
+- [DOC](pandoc_cen310-week-8.docx)
+- [SLIDE](cen310-week-8.pdf)
+- [PPTX](cen310-week-8.pptx)
 
 ---
 
-## Proje Gereksinimleri
-
-### 1. Dokümantasyon
-- Proje raporu
-- Kaynak kod dokümantasyonu
-- Performans analizi sonuçları
-- Uygulama zorlukları
-- Gelecek iyileştirmeler
-
-### 2. Uygulama
-- Çalışan paralel program
-- OpenMP ve/veya MPI kullanımı
-- Performans optimizasyonları
-- Hata yönetimi
-- Kod kalitesi
+<iframe width=700, height=500 frameBorder=0 src="../cen310-week-8.html"></iframe>
 
 ---
 
-## Sunum Yönergeleri
+## Project Review Session
 
-### Format
-- Grup başına 20 dakika
-- 15 dakika sunum
-- 5 dakika soru-cevap
+### Schedule
+- Individual project reviews
+- 15 minutes per student
+- Progress evaluation and feedback
 
-### İçerik
-1. Problem Tanımı
-2. Çözüm Yaklaşımı
-3. Uygulama Detayları
-4. Performans Sonuçları
-5. Zorluklar ve Çözümler
-6. Demo
+### Requirements
+- Bring your project code
+- Prepare a brief presentation
+- Be ready to explain your implementation
 
----
-
-## Performans Analizi Gereksinimleri
-
-### Ölçülecek Metrikler
-- Çalışma süresi
-- Hızlanma
-- Verimlilik
-- Ölçeklenebilirlik
-- Kaynak kullanımı
-
-### Analiz Araçları
-```bash
-# Örnek performans ölçümü
-$ perf stat ./paralel_program
-$ nvprof ./cuda_program
-$ vtune ./openmp_program
-```
+### Focus Areas
+- Code implementation
+- Performance optimization
+- Documentation quality
+- Problem-solving approach
 
 ---
 
-## Örnek Proje Yapısı
+## Contact Information
 
-```cpp
-// Proje mimarisi örneği
-proje/
-├── src/
-│   ├── main.cpp
-│   ├── paralel_uygulama.cpp
-│   └── yardimcilar.cpp
-├── include/
-│   ├── paralel_uygulama.h
-│   └── yardimcilar.h
-├── testler/
-│   └── test_paralel.cpp
-├── dokumanlar/
-│   ├── rapor.pdf
-│   └── sunum.pptx
-└── README.md
-```
+For any questions about the project review:
 
----
-
-## Performans Karşılaştırma Şablonu
-
-### Sıralı vs Paralel Uygulama
-
-```cpp
-// Sıralı uygulama
-double sirali_sure = 0.0;
-{
-    auto baslangic = std::chrono::high_resolution_clock::now();
-    sirali_sonuc = sirali_hesapla();
-    auto bitis = std::chrono::high_resolution_clock::now();
-    sirali_sure = std::chrono::duration<double>(bitis-baslangic).count();
-}
-
-// Paralel uygulama
-double paralel_sure = 0.0;
-{
-    auto baslangic = std::chrono::high_resolution_clock::now();
-    paralel_sonuc = paralel_hesapla();
-    auto bitis = std::chrono::high_resolution_clock::now();
-    paralel_sure = std::chrono::duration<double>(bitis-baslangic).count();
-}
-
-// Hızlanma hesapla
-double hizlanma = sirali_sure / paralel_sure;
-```
-
----
-
-## Yaygın Proje Konuları
-
-1. Matris İşlemleri
-   - Matris çarpımı
-   - Matris ayrıştırma
-   - Lineer denklem çözümü
-
-2. Bilimsel Hesaplama
-   - N-cisim simülasyonu
-   - Dalga denklemi çözücü
-   - Monte Carlo yöntemleri
-
-3. Veri İşleme
-   - Görüntü işleme
-   - Sinyal işleme
-   - Veri madenciliği
-
-4. Graf Algoritmaları
-   - En kısa yol
-   - Graf boyama
-   - Maksimum akış
-
----
-
-## Değerlendirme Kriterleri
-
-### Teknik Yönler (60%)
-- Doğru uygulama (20%)
-- Performans optimizasyonu (20%)
-- Kod kalitesi (10%)
-- Dokümantasyon (10%)
-
-### Sunum (40%)
-- Açık anlatım (15%)
-- Demo kalitesi (15%)
-- Soru-cevap yönetimi (10%)
-
----
-
-## Proje Raporu Şablonu
-
-### 1. Giriş
-- Problem tanımı
-- Hedefler
-- Arka plan
-
-### 2. Tasarım
-- Mimari
-- Algoritmalar
-- Paralelleştirme stratejisi
-
-### 3. Uygulama
-- Kullanılan teknolojiler
-- Kod yapısı
-- Temel bileşenler
-
-### 4. Sonuçlar
-- Performans ölçümleri
-- Analiz
-- Karşılaştırmalar
-
-### 5. Sonuç
-- Başarılar
-- Zorluklar
-- Gelecek çalışmalar
-
----
-
-## Kaynaklar ve Referanslar
-
-### Dokümantasyon
-- OpenMP: [https://www.openmp.org/](https://www.openmp.org/)
-- MPI: [https://www.open-mpi.org/](https://www.open-mpi.org/)
-- CUDA: [https://docs.nvidia.com/cuda/](https://docs.nvidia.com/cuda/)
-
-### Araçlar
-- Performans analiz araçları
-- Hata ayıklama araçları
-- Profilleme araçları
+- **Email:** ugur.coruh@erdogan.edu.tr
+- **Office Hours:** By appointment
+- **Location:** Engineering Faculty
 
 ---
 
@@ -264,6 +102,10 @@ double hizlanma = sirali_sure / paralel_sure;
 
 <!-- _color: orange -->
 
-# Sorular ve Tartışma
+# Good Work!
 
---- 
+---
+
+$$
+End-Of-Week-8
+$$ 
