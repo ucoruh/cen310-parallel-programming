@@ -8,13 +8,12 @@ on:
 # Concurrent deployments'ı önle
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
-  contents: write
-  pages: write      # GitHub Pages için izin
-  id-token: write   # GitHub Pages deployment için izin
-  deployments: write # Deployment izni
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -22,18 +21,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Git geçmişinin tamamını al
+          fetch-depth: 0
           
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
           
-      - uses: actions/cache@v4
-        with:
-          key: ${{ github.ref }}
-          path: .cache
-
-      # Tüm pip paketlerini tek seferde kur
+      - uses: actions/configure-pages@v4
+          
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -69,11 +64,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
