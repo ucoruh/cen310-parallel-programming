@@ -10,32 +10,51 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
         with:
-          python-version: 3.x
-      - uses: actions/cache@v2
+          fetch-depth: 0 # Git geçmişinin tamamını al
+          
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: 'pip' # pip paketlerini cache'le
+          
+      - uses: actions/cache@v4
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install mkdocs
-      - run: pip install pymdown-extensions
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-material-extensions
-      - run: pip install mkdocs-simple-hooks
-      - run: pip install mkdocs-video
-      - run: pip install mkdocs-minify-plugin
-      - run: pip install mkdocs-git-revision-date-localized-plugin
-      - run: pip install mkdocs-static-i18n
-      - run: pip install mkdocs-with-pdf
-      - run: pip install qrcode
-      - run: pip install mkdocs-awesome-pages-plugin
-      - run: pip install mkdocs-embed-external-markdown
-      - run: pip install mkdocs-include-markdown-plugin
-      - run: pip install mkdocs-ezlinks-plugin
-      - run: pip install mkdocs-git-authors-plugin
-      - run: pip install mkdocs-git-committers-plugin
-      - run: pip install mkdocs-exclude
-      - run: pip install pptx2md
-      - run: pip install mkdocs-macros-plugin
-      - run: mkdocs gh-deploy --force
+
+      # Tüm pip paketlerini tek seferde kur
+      - name: Install dependencies
+        run: |
+          pip install mkdocs \
+                      pymdown-extensions \
+                      mkdocs-material \
+                      mkdocs-material-extensions \
+                      mkdocs-simple-hooks \
+                      mkdocs-video \
+                      mkdocs-minify-plugin \
+                      mkdocs-git-revision-date-localized-plugin \
+                      mkdocs-static-i18n \
+                      mkdocs-with-pdf \
+                      qrcode \
+                      mkdocs-awesome-pages-plugin \
+                      mkdocs-embed-external-markdown \
+                      mkdocs-include-markdown-plugin \
+                      mkdocs-ezlinks-plugin \
+                      mkdocs-git-authors-plugin \
+                      mkdocs-git-committers-plugin \
+                      mkdocs-exclude \
+                      pptx2md \
+                      mkdocs-macros-plugin
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy MkDocs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdocs gh-deploy --force
