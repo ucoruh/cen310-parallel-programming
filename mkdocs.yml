@@ -1,0 +1,233 @@
+# Project information 
+site_name: "RTEU CEN310 Parallel Programming Course"
+docs_dir: docs  
+site_dir: site  
+site_author: 'Asst. Prof. Dr. Uğur CORUH'
+site_url: 'https://ucoruh.github.io/cen310-parallel-programming/'
+site_description: 'Course Notes for Parallel Programming'
+
+# Repository
+repo_name: 'GitHub'
+repo_url: 'https://github.com/ucoruh/cen310-parallel-programming'
+edit_uri: 'https://github.com/ucoruh/cen310-parallel-programming/edit/main/docs/'
+
+# Copyright
+copyright: Copyright &copy; 2006 - 2024 Recep Tayyip Erdoğan University
+
+# Configuration
+theme:
+  name: material
+  custom_dir: docs/overrides
+
+  favicon: images/favicon.png
+
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    logo: logo  # Adjust the file name if necessary
+  
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+  
+  # Static files  
+  static_templates:
+   - 404.html
+    
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+
+  palette:
+    - scheme: default
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: orange
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Customization
+extra:
+  annotate:
+    json: [.s2]
+  analytics:
+    provider: google
+    property: GOOGLE_ANALYTICS_RTEU_CEN310
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target=_blank>feedback form</a>.
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    cookies:
+      analytics: Google Analytics
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ucoruh
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ugurcoruh/
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/ucoruh/
+    - icon: fontawesome/regular/id-card
+      link: https://dblp.org/pid/230/0394.html
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/my-orcid?orcid=0000-0003-4193-8401
+    - icon: fontawesome/brands/google
+      link: https://scholar.google.com/citations?user=KIU4ltMAAAAJ&hl=tr
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: ucoruh
+      repo: cen310-parallel-programming
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - codehilite:
+      guess_lang: true
+
+# Plugins
+plugins:
+  - mkdocs-simple-hooks:
+      hooks:
+        on_env: "hooks:on_env"
+  - external-markdown
+  - mkdocs-video
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - i18n:
+      docs_structure: suffix
+      reconfigure_material: true
+      reconfigure_search: true
+      fallback_to_default: true
+      languages:
+        - locale: en
+          name: "English"
+          build: true
+          default: true
+          site_name: "RTEU CEN310 Parallel Programming Course"
+        - locale: tr
+          name: "Türkçe"
+          build: true
+          site_name: "RTEU CEN310 Paralel Programlama Kursu"
+          nav_translations:
+            Home: "Anasayfa"
+            Syllabus: "Ders Programı"
+            Course Modules: "Ders Modülleri"
+            License: "Lisans"
+            Resume: "Özgeçmiş"
+            Changelog: "Revizyonlar"
+  - tags:
+      tags_file: tags.md
+  - minify:
+      minify_html: true
+      htmlmin_opts:
+        remove_comments: true
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      type: timeago
+  - git-authors:
+      sort_authors_by: contribution
+  - git-committers:
+      repository: ucoruh/cen310-parallel-programming
+      docs_path: docs/
+      branch: main
+      token: !ENV MKDOCS_GIT_COMMITTERS_APIKEY
+  - macros
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Page tree (for navigation)
+nav:
+  - Home: index.md
+  - Syllabus: syllabus/syllabus.md
+  - Course Modules:
+    - Week-1 (Course Introduction and Overview): week-1/cen310-week-1.md
+    - Week-2 (Parallel Computing Fundamentals): week-2/cen310-week-2.md
+    - Week-3 (Introduction to OpenMP): week-3/cen310-week-3.md
+    - Week-4 (Advanced OpenMP): week-4/cen310-week-4.md
+    - Week-5 (Performance Analysis & MPI Introduction): week-5/cen310-week-5.md
+    - Week-6 (Advanced MPI & Parallel Patterns): week-6/cen310-week-6.md
+    - Week-7 (Quiz-1): week-7-quiz/cen310-week-7.md
+    - Week-8 (Midterm Project Review): week-8-midterm/cen310-week-8.md
+    - Week-9 (Midterm Examination Period): week-9-midterm/cen310-week-9.md
+    - Week-10 (Parallel Algorithm Design & GPU Basics): week-10/cen310-week-10.md
+    - Week-11 (Advanced GPU Programming): week-11/cen310-week-11.md
+    - Week-12 (Real-world Applications I): week-12/cen310-week-12.md
+    - Week-13 (Real-world Applications II): week-13/cen310-week-13.md
+    - Week-14 (Quiz-2): week-14-quiz/cen310-week-14.md
+    - Week-15 (Final Project Review): week-15-final/cen310-week-15.md
+    - Week-16 (Final Examination Period): week-16-final/cen310-week-16.md
+  - License: license.md
+  - Resume: resume/index.md
+  - Changelog: changelog/index.md
