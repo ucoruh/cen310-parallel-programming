@@ -4,6 +4,12 @@ on:
     branches:
       - master 
       - main
+
+# Concurrent deployments'ı önle
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 permissions:
   contents: write
   pages: write      # GitHub Pages için izin
