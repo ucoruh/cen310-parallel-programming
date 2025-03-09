@@ -2,308 +2,322 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/license/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/license/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/license/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tags/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/tags/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/tags/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/changelog/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/changelog/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/changelog/"/>
     </url>
     <url>
+        <loc>https://ucoruh.github.io/cen310-parallel-programming/project-guide/</loc>
+        <lastmod>2025-03-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/project-guide/"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/project-guide/"/>
+    </url>
+    <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/resume/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/resume/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/resume/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/syllabus/syllabus/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/syllabus/syllabus/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/syllabus/syllabus/"/>
     </url>
     <url>
-        <loc>https://ucoruh.github.io/cen310-parallel-programming/week-1/cen429-week-1/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <loc>https://ucoruh.github.io/cen310-parallel-programming/week-1/cen310-week-1/</loc>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-1/cen429-week-1/"/>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-1/cen429-week-1/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-1/cen310-week-1/"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-1/cen310-week-1/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-10/cen310-week-10/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-10/cen310-week-10/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-10/cen310-week-10/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-11/cen310-week-11/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-11/cen310-week-11/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-11/cen310-week-11/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-12/cen310-week-12/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-12/cen310-week-12/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-12/cen310-week-12/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-13/cen310-week-13/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-13/cen310-week-13/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-13/cen310-week-13/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-14/cen310-week-14/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-14/cen310-week-14/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-14/cen310-week-14/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-15/cen310-week-15/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-15/cen310-week-15/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-15/cen310-week-15/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-16-final/cen310-week-16/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-16-final/cen310-week-16/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-16-final/cen310-week-16/"/>
     </url>
     <url>
-        <loc>https://ucoruh.github.io/cen310-parallel-programming/week-2/cen429-week-2/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <loc>https://ucoruh.github.io/cen310-parallel-programming/week-2/cen310-week-2/</loc>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-2/cen429-week-2/"/>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-2/cen429-week-2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-2/cen310-week-2/"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-2/cen310-week-2/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-3/cen310-week-3/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-3/cen310-week-3/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-3/cen310-week-3/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-4/cen310-week-4/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-4/cen310-week-4/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-4/cen310-week-4/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-5/cen310-week-5/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-5/cen310-week-5/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-5/cen310-week-5/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-6/cen310-week-6/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-6/cen310-week-6/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-6/cen310-week-6/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-7/cen310-week-7/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-7/cen310-week-7/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-7/cen310-week-7/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-8/cen310-week-8/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-8/cen310-week-8/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-8/cen310-week-8/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/week-9-midterm/cen310-week-9/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-9-midterm/cen310-week-9/"/>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-9-midterm/cen310-week-9/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/license/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/license/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/license/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/tags/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/tags/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/tags/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/changelog/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/changelog/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/changelog/"/>
     </url>
     <url>
+        <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/project-guide/</loc>
+        <lastmod>2025-03-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/project-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/project-guide/"/>
+    </url>
+    <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/resume/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/resume/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/resume/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/syllabus/syllabus/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/syllabus/syllabus/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/syllabus/syllabus/"/>
     </url>
     <url>
-        <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-1/cen429-week-1/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-1/cen310-week-1/</loc>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-1/cen429-week-1/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-1/cen429-week-1/"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-1/cen310-week-1/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-1/cen310-week-1/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-10/cen310-week-10/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-10/cen310-week-10/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-10/cen310-week-10/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-11/cen310-week-11/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-11/cen310-week-11/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-11/cen310-week-11/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-12/cen310-week-12/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-12/cen310-week-12/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-12/cen310-week-12/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-13/cen310-week-13/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-13/cen310-week-13/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-13/cen310-week-13/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-14/cen310-week-14/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-14/cen310-week-14/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-14/cen310-week-14/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-15/cen310-week-15/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-15/cen310-week-15/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-15/cen310-week-15/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-16-final/cen310-week-16/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-16-final/cen310-week-16/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-16-final/cen310-week-16/"/>
     </url>
     <url>
-        <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-2/cen429-week-2/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-2/cen310-week-2/</loc>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-2/cen429-week-2/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-2/cen429-week-2/"/>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-2/cen310-week-2/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-2/cen310-week-2/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-3/cen310-week-3/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-3/cen310-week-3/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-3/cen310-week-3/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-4/cen310-week-4/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-4/cen310-week-4/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-4/cen310-week-4/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-5/cen310-week-5/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-5/cen310-week-5/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-5/cen310-week-5/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-6/cen310-week-6/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-6/cen310-week-6/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-6/cen310-week-6/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-7/cen310-week-7/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-7/cen310-week-7/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-7/cen310-week-7/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-8/cen310-week-8/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-8/cen310-week-8/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-8/cen310-week-8/"/>
     </url>
     <url>
         <loc>https://ucoruh.github.io/cen310-parallel-programming/tr/week-9-midterm/cen310-week-9/</loc>
-        <lastmod>2025-02-16</lastmod>
+        <lastmod>2025-03-09</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="tr" href="https://ucoruh.github.io/cen310-parallel-programming/tr/week-9-midterm/cen310-week-9/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://ucoruh.github.io/cen310-parallel-programming/week-9-midterm/cen310-week-9/"/>
