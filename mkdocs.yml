@@ -12,7 +12,7 @@ repo_url: 'https://github.com/ucoruh/cen310-parallel-programming'
 edit_uri: 'https://github.com/ucoruh/cen310-parallel-programming/edit/main/docs/'
 
 # Copyright
-copyright: Copyright &copy; 2006 - 2024 Recep Tayyip Erdoğan University
+copyright: Copyright &copy; 2019 - 2025 Asst. Prof. Dr. Uğur CORUH
 
 # Configuration
 theme:
@@ -110,6 +110,12 @@ extra:
       link: https://orcid.org/my-orcid?orcid=0000-0003-4193-8401
     - icon: fontawesome/brands/google
       link: https://scholar.google.com/citations?user=KIU4ltMAAAAJ&hl=tr
+    - icon: fontawesome/regular/moon
+      link: https://publons.com/researcher/1540204/ugur-coruh/
+    - icon: fontawesome/regular/clipboard
+      link: https://avesis.erdogan.edu.tr/ugur.coruh
+    - icon: material/account-circle
+      link: https://www.ugurcoruh.com/
 
 # Extensions
 markdown_extensions:
@@ -197,10 +203,11 @@ plugins:
             "Hafta-14 (Quiz-2)": "Week-14 (Quiz-2)"
             "Hafta-15 (Final Proje İncelemesi)": "Week-15 (Final Project Review)"
             "Hafta-16 (Final Sınav Dönemi)": "Week-16 (Final Examination Period)"
+            "Proje Rehberi": "Project Guide"
         - locale: tr
           name: "Türkçe"
           build: true
-          site_name: "RTEU CEN310 Paralel Programlama Kursu"
+          site_name: "RTEÜ CEN310 Paralel Programlama Kursu"
           nav_translations:
             "Home": "Anasayfa"
             "Syllabus": "Ders Programı"
@@ -224,6 +231,7 @@ plugins:
             "Week-14 (Quiz-2)": "Hafta-14 (Quiz-2)"
             "Week-15 (Final Project Review)": "Hafta-15 (Final Proje İncelemesi)"
             "Week-16 (Final Examination Period)": "Hafta-16 (Final Sınav Dönemi)"
+            "Project Guide": "Proje Rehberi"
   - tags:
       tags_file: tags.md
   - minify:
@@ -249,24 +257,25 @@ extra_javascript:
 # Page tree (for navigation)
 nav:
   - Home: index.md
-  - Syllabus: syllabus/syllabus.en.md
+  - Syllabus: syllabus/syllabus.md
   - Course Modules:
-    - Week-1 (Course Introduction and Overview): week-1/cen429-week-1.en.md
-    - Week-2 (Parallel Computing Fundamentals): week-2/cen429-week-2.en.md
-    - Week-3 (Introduction to OpenMP): week-3/cen310-week-3.en.md
-    - Week-4 (Advanced OpenMP): week-4/cen310-week-4.en.md
-    - Week-5 (Performance Analysis & MPI Introduction): week-5/cen310-week-5.en.md
-    - Week-6 (Advanced MPI & Parallel Patterns): week-6/cen310-week-6.en.md
-    - Week-7 (Quiz-1): week-7/cen310-week-7.en.md
-    - Week-8 (Midterm Project Review): week-8/cen310-week-8.en.md
-    - Week-9 (Midterm Examination Period): week-9/cen310-week-9.en.md
-    - Week-10 (Parallel Algorithm Design & GPU Basics): week-10/cen310-week-10.en.md
-    - Week-11 (Advanced GPU Programming): week-11/cen310-week-11.en.md
-    - Week-12 (Real-world Applications I): week-12/cen310-week-12.en.md
-    - Week-13 (Real-world Applications II): week-13/cen310-week-13.en.md
-    - Week-14 (Quiz-2): week-14/cen310-week-14.en.md
-    - Week-15 (Final Project Review): week-15/cen310-week-15.en.md
-    - Week-16 (Final Examination Period): week-16/cen310-week-16.en.md
+    - Week-1 (Course Introduction and Overview): week-1/cen310-week-1.md
+    - Week-2 (Parallel Computing Fundamentals): week-2/cen310-week-2.md
+    - Week-3 (Introduction to OpenMP): week-3/cen310-week-3.md
+    - Week-4 (Advanced OpenMP): week-4/cen310-week-4.md
+    - Week-5 (Performance Analysis & MPI Introduction): week-5/cen310-week-5.md
+    - Week-6 (Advanced MPI & Parallel Patterns): week-6/cen310-week-6.md
+    - Week-7 (Quiz-1): week-7/cen310-week-7.md
+    - Week-8 (Midterm Project Review): week-8/cen310-week-8.md
+    - Week-9 (Midterm Examination Period): week-9/cen310-week-9.md
+    - Week-10 (Parallel Algorithm Design & GPU Basics): week-10/cen310-week-10.md
+    - Week-11 (Advanced GPU Programming): week-11/cen310-week-11.md
+    - Week-12 (Real-world Applications I): week-12/cen310-week-12.md
+    - Week-13 (Real-world Applications II): week-13/cen310-week-13.md
+    - Week-14 (Quiz-2): week-14/cen310-week-14.md
+    - Week-15 (Final Project Review): week-15/cen310-week-15.md
+    - Week-16 (Final Examination Period): week-16/cen310-week-16.md
+  - "Project Guide": project-guide/index.md
   - License: license.md
   - Resume: resume/index.md
   - Changelog: changelog/index.md
